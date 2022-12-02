@@ -1,0 +1,11 @@
+<html>
+    {% include "base.html" %}
+    {% load static %}
+    <center><img src="{% static 'images/img3.png' %}" class="rounded mx-auto d-block w-25 p-3" height="400" wdith="1000"></center>
+    <center><h1>{{title}}</h1>
+    <form method="post" > {%csrf_token%}
+         {{form.as_p}}
+         <button type ="submit">Search</button>
+</form>
+</center>
+</html>
